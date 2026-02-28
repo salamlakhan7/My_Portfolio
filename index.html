@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abdul Salam | Backend Developer Portfolio</title>
+  <meta name="description" content="Abdul Salam - Backend Developer (Python, Django). Portfolio with projects, skills, education, and contact details." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPVf8n2fX9nKOxExQalwEswN8nD+LlW4c2WNA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="aurora" aria-hidden="true"></div>
+
+  <header class="topbar wrapper">
+    <div>
+      <p class="tag">BACKEND DEVELOPER • PYTHON | DJANGO</p>
+      <h1>ABDUL SALAM</h1>
+      <p class="headline">Motivated backend developer focused on clean APIs, Django ORM, and modern backend best practices.</p>
+    </div>
+
+    <div class="top-actions">
+      <button id="themeToggle" class="toggle" aria-label="Toggle theme"><i class="fa-solid fa-moon"></i></button>
+      <a class="btn-link" href="#contact"><i class="fa-solid fa-paper-plane"></i> Contact</a>
+      <button id="downloadCv" class="btn-link" type="button"><i class="fa-solid fa-file-arrow-down"></i> Download CV</button>
+    </div>
+  </header>
+
+  <nav class="wrapper nav-chips" aria-label="Section navigation">
+    <a href="#summary">Summary</a>
+    <a href="#skillsSection">Skills</a>
+    <a href="#projectsSection">Projects</a>
+    <a href="#education">Education</a>
+    <a href="#certificates">Certificates</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main class="wrapper">
+    <section id="contact" class="hero card reveal">
+      <p class="pill"><i class="fa-solid fa-bolt"></i> Backend Developer (Python | Django Tech)</p>
+      <h2>I build reliable backend systems that are simple, scalable, and practical.</h2>
+      <div class="contact-grid">
+        <a href="mailto:Salamlakhan7@gmail.com"><i class="fa-solid fa-envelope"></i> Salamlakhan7@gmail.com</a>
+        <button class="contact-btn" data-copy="Salamlakhan7@gmail.com" type="button"><i class="fa-regular fa-copy"></i> Copy Email</button>
+        <a href="tel:+923184096277"><i class="fa-solid fa-phone"></i> (+92) 318 4096277</a>
+        <button class="contact-btn" data-copy="+923184096277" type="button"><i class="fa-regular fa-copy"></i> Copy Phone</button>
+        <a href="https://github.com/salamlakhan7" target="_blank" rel="noreferrer"><i class="fa-brands fa-github"></i> @salamlakhan7</a>
+        <a href="https://www.linkedin.com/in/abdul-salam-501b2025b/" target="_blank" rel="noreferrer"><i class="fa-brands fa-linkedin"></i> /abdul-salam</a>
+      </div>
+    </section>
+
+    <section id="summary" class="card reveal">
+      <h3><i class="fa-solid fa-user"></i> Professional Summary</h3>
+      <p>
+        Motivated backend developer with hands-on experience in Python and Django through academic and personal projects.
+        Comfortable building backend logic, working with Django ORM, and developing basic REST APIs. Passionate about modern
+        backend practices, improving code quality, and contributing positively to collaborative development environments.
+      </p>
+    </section>
+
+    <section id="skillsSection" class="reveal">
+      <h3><i class="fa-solid fa-code"></i> Skills</h3>
+      <div id="skills" class="card skills"></div>
+    </section>
+
+    <section id="education" class="card reveal">
+      <h3><i class="fa-solid fa-graduation-cap"></i> Education</h3>
+      <ul class="list">
+        <li><strong>BS in Computer Science</strong> (Feb 2022 – Feb 2026)</li>
+        <li>COMSATS University Islamabad, Vehari Campus</li>
+        <li>Relevant coursework: Machine Learning, NLP, Artificial Intelligence, Programming for AI (P4AI), Web Development, Software Engineering.</li>
+      </ul>
+    </section>
+
+    <section id="projectsSection" class="reveal">
+      <div class="section-head">
+        <h3><i class="fa-solid fa-diagram-project"></i> Academic Projects</h3>
+        <select id="stackFilter" aria-label="Filter projects by technology"></select>
+      </div>
+      <div id="projectGrid" class="grid"></div>
+    </section>
+
+    <section id="certificates" class="card reveal">
+      <h3><i class="fa-solid fa-certificate"></i> License & Certificates</h3>
+      <ul class="list">
+        <li>Introduction to Django (LinkedIn Learning)</li>
+        <li>Benefits of GitHub Community (LinkedIn Learning)</li>
+        <li>Public Speaking (LinkedIn Learning)</li>
+      </ul>
+    </section>
+
+    <section class="card reveal">
+      <h3><i class="fa-solid fa-people-group"></i> Soft Skills</h3>
+      <div class="chips">
+        <span><i class="fa-solid fa-lightbulb"></i> Problem Solving</span>
+        <span><i class="fa-solid fa-handshake"></i> Team Collaboration</span>
+        <span><i class="fa-solid fa-shuffle"></i> Adaptability</span>
+        <span><i class="fa-solid fa-seedling"></i> Willingness to Learn</span>
+      </div>
+    </section>
+  </main>
+
+  <button id="toTop" class="to-top" type="button" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <footer class="wrapper">
+    <p>© <span id="year"></span> Abdul Salam • Backend Developer (Python | Django)</p>
+  </footer>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
